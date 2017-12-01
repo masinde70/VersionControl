@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Hello_World
 {
@@ -6,7 +8,9 @@ namespace Hello_World
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Random r = new Random();
+            var n = r.Next(1, 99);
+            Console.WriteLine(n);
         }
     }
 }
